@@ -14,7 +14,6 @@ const renderCard = item => {
     card.innerHTML = `
         <img src="./phone_store/img/${item.imgUrl}" alt="">
         <h1>${item.name}</h1>
-        <p>Color: ${item.color}</p>
         <strong> Цена: ${item.price} usd </strong>
         `;
     card.appendChild(button);
@@ -46,6 +45,8 @@ const searchItems = () => {
     renderCards(result)
 }
 document.getElementById('search').oninput = searchItems;
+
+
 
 
 

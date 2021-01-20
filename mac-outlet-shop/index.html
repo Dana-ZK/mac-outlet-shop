@@ -4,24 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>mac-outlet-shop</title>
+   
 </head>
 <body>
     <header>
-        <div id="header"><img src="./phone_store/img/icons/image 1.png" alt="logo"><img src="./phone_store/img/icons/cart.svg" alt=""></div>
         <div id="header">
-            <input type="text" id="search" placeholder="Хочу найти...">
-            <select name="sorting" id="Sorting-type" onselect="myFunction(priseSorting)">
-                <option value="default" selected>Популярные</option>
-                <option  value="to-high">Сначала дешевле</option>
-                <option  value="to-low">Сначала дороже</option>
-            </select>
+            <div id="logo">
+                <img src="./phone_store/img/icons/image 1.png" alt="logo">
+                <input class="cart" type="submit" value="">
+            </div>
+            <div class="banners">
+                <div class="regular slider">
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/air_pods_max_banner.jpg" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/airpods_pro_banner.png" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/apple_tv_banner.png" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/ipad_air_banner.jpg" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/iphone_12_banner.jpg" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/mac_book_banner.jpg" alt="">
+                </div>
+                <div class="slick-slide">
+                    <img src="./phone_store/img/banners/watch_banner.jpg" alt="">
+                </div>
+                </div>
+            </div>
+            <div id="search">
+                <input class="button-search" type="submit" value="">
+                <input type="text" class="search_holder pic" placeholder="Хочу найти...">
+                <input class="button-filter" type="submit" value="">
+                <input class="button-setting" type="submit" value="">
+            </div>
         </div>
-        
     </header>
     <main class="container"></main>
     <footer></footer>
-
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+    $(".regular").slick({
+        // dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 2
+      });
+  </script>
     <script src="./phone_store/js/items.js"></script>
     <script src="index.js"></script>
 </body>
