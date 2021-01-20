@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mac-outlet-shop</title>
+</head>
+<body>
+    <header>
+        <div id="header"><img src="./phone_store/img/icons/image 1.png" alt="logo"><img src="./phone_store/img/icons/cart.svg" alt=""></div>
+        <div id="header">
+            <input type="text" id="search" placeholder="Хочу найти...">
+            <select name="sorting" id="Sorting-type" onselect="myFunction(priseSorting)">
+                <option value="default" selected>Популярные</option>
+                <option  value="to-high">Сначала дешевле</option>
+                <option  value="to-low">Сначала дороже</option>
+            </select>
+        </div>
+        
+    </header>
+    <main class="container"></main>
+    <footer></footer>
+
+    <script src="./phone_store/js/items.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
